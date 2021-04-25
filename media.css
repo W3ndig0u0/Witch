@@ -72,11 +72,8 @@
   }
   .trailer2 {
     font-size: 32px;
-    margin-left: 15vw;
   }
-  .trailer2:nth-of-type(2) {
-    margin-left: 65vw;
-  }
+
   .frame-container2 {
     zoom: 125%;
     margin: 0px;
@@ -121,11 +118,10 @@
   }
   .trailer2 {
     font-size: 38px;
-    margin-left: 8vw;
   }
-  .trailer2:nth-of-type(2) {
-    margin-left: 70vw;
-  }
+  /* .trailer2:nth-of-type(2) {
+    margin-right: 1rem;
+  } */
   .frame-container2 {
     zoom: 180%;
     margin: 0px;
