@@ -1,5 +1,5 @@
 .loader-gif {
-  animation: jump 12s forwards;
+  animation: jump 8s forwards;
   position: fixed;
   top: 30%;
   left: 25%;
@@ -9,7 +9,7 @@
 }
 
 .loader {
-  animation: run 18s forwards;
+  animation: run 12s forwards;
   position: fixed;
   width: 100%;
   height: 100%;
