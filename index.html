@@ -7,12 +7,13 @@
 
     <title>Wandering Witch</title>
     <link rel="stylesheet" href="fade.css" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="loader.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="media.css" />
     <link rel="stylesheet" href="modal.css" />
 
-    <script defer src="js/show.js"></script>
     <script defer src="js/menu.js"></script>
     <script defer src="js/modal.js"></script>
 
@@ -46,11 +47,10 @@
             alt="Title"
           />
           <div class="mobile-menu">
-            <div onclick="menu(this)">
+            <div>
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
-              <div class="bar4">&#10006;</div>
             </div>
           </div>
           <img
@@ -84,22 +84,15 @@
             ></iframe>
           </div>
 
-
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div>
-
           <p class="trailer2">Manga</p>
           <div class="frame-container2">
             <img
-              class="manga"
+              class="manga" id="img1"
               src="https://i.ebayimg.com/images/g/BgsAAOSwR6ZfAAtQ/s-l1600.jpg"
               alt="manga-img1"
             />
             <img
-              class="manga"
+              class="manga" id="img2"
               src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617705097l/56306016.jpg"
               alt="Manga-img2"
             />
@@ -108,16 +101,23 @@
           <p class="trailer2">Light Novel</p>
           <div class="frame-container2">
             <img
-              class="manga"
+              class="manga" id="img3"
               src="https://pbs.twimg.com/media/Dq9Dz60XQAA2KPq.jpg"
               alt="manga-img1"
             />
             <img
-              class="manga"
+              class="manga" id="img4"
               src="https://pbs.twimg.com/media/EUr3NDnWAAQrzrJ.jpg"
               alt="Manga-img2"
             />
           </div>
+
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img">
+            <div id="caption"></div>
+          </div>
+
 
           <footer class="mobile-footer">
             <h1>Mady By WendigOuO</h1>
@@ -126,11 +126,10 @@
         </div>
 
         <div class="right">
-          <div class="container" onclick="menu(this)">
+          <div class="container">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <div class="bar4">&#10006;</div>
           </div>
           <div class="mini-img">
             <img

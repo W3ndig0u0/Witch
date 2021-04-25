@@ -172,36 +172,50 @@
     width: 55%;
   }
 }
+
 @media screen and (min-width: 2560px) {
   .frame-container {
     zoom: 250%;
     margin-right: 2vw;
     margin-left: 2vw;
   }
+
   .title {
     width: 25rem;
     margin-bottom: 2vh;
   }
+
   .text {
     width: 50vh;
     margin-right: 3vw;
     margin-bottom: 5vh;
   }
+
   .trailer {
     font-size: 52px;
     padding-top: 2px;
   }
+
+  .mini-img img {
+    width: 70%;
+    max-height: 25vh;
+    margin-top: 7vh;
+  }
+
   footer {
     letter-spacing: 0.2em;
     padding-top: 3vh;
     height: 100vh;
   }
+
   footer h1 {
     font-size: 62px;
   }
+
   footer p {
     font-size: 32px;
   }
+
   .bar1,
   .bar2,
   .bar3 {

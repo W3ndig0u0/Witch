@@ -1,0 +1,25 @@
+footer {
+  border-top: 3px solid var(--purp);
+  letter-spacing: 0.2em;
+  padding: 1vw;
+  height: 15vh;
+}
+footer h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  color: var(--orang);
+  text-shadow: 1px 2px var(--purp);
+}
+footer p {
+  font-size: 16px;
+  padding: 0;
+  margin: 1vh;
+  color: var(--blue2);
+  text-shadow: 1px 1px var(--orang);
+}
+.mobile-footer {
+  text-align: center;
+  padding: 4vw;
+  border-top: 2px solid var(--orang);
+}

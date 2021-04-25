@@ -14,14 +14,17 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
 @font-face {
   font-family: "Kabrio Abarth";
   src: url("fonts/KabrioAbarth-Regular.woff2") format("woff2"),
     url("fonts/KabrioAbarth-Regular.woff") format("woff");
 }
+
 .main {
   animation: main 14s forwards ease-in;
 }
+
 body,
 html {
   overflow: hidden;
@@ -32,21 +35,24 @@ html {
   font-family: "Kabrio Abarth";
   background-image: linear-gradient(
       to top right,
-      rgba(89, 94, 171, 1),
+      rgba(89, 94, 171, 0.9),
       rgba(1, 136, 202, 0.4),
       rgba(255, 255, 255, 1),
       rgba(142, 99, 130, 1)
     ),
     url("img/YEP.png");
 }
+
 .grid {
   display: grid;
   grid-template-columns: 2.5fr 4fr 1fr;
   height: 100vh;
 }
+
 .left {
   text-align: center;
 }
+
 .title {
   width: 60%;
   margin-top: 1.5rem;
@@ -54,6 +60,7 @@ html {
   margin-right: 2vw;
   margin-bottom: 2vh;
 }
+
 .text {
   border-top: 3px solid var(--purp);
   padding-top: 10px;
@@ -62,31 +69,6 @@ html {
   margin-right: 2vw;
   transform: scale(0.9);
   width: 45vh;
-}
-footer {
-  border-top: 3px solid var(--purp);
-  letter-spacing: 0.2em;
-  padding: 1vw;
-  height: 15vh;
-}
-footer h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 32px;
-  color: var(--orang);
-  text-shadow: 1px 2px var(--purp);
-}
-footer p {
-  font-size: 16px;
-  padding: 0;
-  margin: 1vh;
-  color: var(--blue2);
-  text-shadow: 1px 1px var(--orang);
-}
-.mobile-footer {
-  text-align: center;
-  padding: 4vw;
-  border-top: 2px solid var(--orang);
 }
 
 .trailer {
@@ -167,6 +149,7 @@ iframe {
 .right {
   margin-left: 3vw;
 }
+
 .mini-img img {
   width: 60%;
   max-height: 17vh;
@@ -175,62 +158,4 @@ iframe {
   animation-delay: calc(var(--order) * 15s);
   box-shadow: 2px 2px 5px #333;
   border-radius: 5px;
-}
-.container {
-  margin-top: 5vh;
-  margin-left: 1.5vw;
-  cursor: pointer;
-  width: 33%;
-  padding: 10px;
-  z-index: 10;
-  transition: 1s;
-}
-.bar4 {
-  font-size: 1.3em;
-  margin-left: 0.2rem;
-}
-.mobile-menu {
-  cursor: pointer;
-  margin-top: 5vh;
-  margin-left: 2vw;
-  padding: 10px;
-  z-index: 10;
-  transition: 1s;
-}
-.container:hover,
-.container:active {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 100%;
-  box-shadow: 5px 5px 10px #333;
-}
-.container.change {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 100%;
-  box-shadow: 5px 5px 10px #333;
-}
-.mobile-menu:hover,
-.mobile-menu:active {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 100%;
-  box-shadow: 5px 5px 10px #333;
-}
-.bar1,
-.bar2,
-.bar3 {
-  width: 30px;
-  height: 3px;
-  background-color: var(--purp);
-  margin: 5px 0;
-  transition: 0.5s;
-}
-.change .bar1,
-.change .bar2,
-.change .bar3 {
-  display: none;
-}
-.bar4 {
-  display: none;
-}
-.change .bar4 {
-  display: unset;
 }
