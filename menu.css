@@ -43,6 +43,14 @@
   display: none;
   position: absolute;
   z-index: 10;
+}
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.menu.dark {
   background-image: radial-gradient(
     ellipse at bottom,
     var(--light-bg),

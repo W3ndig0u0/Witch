@@ -13,6 +13,9 @@
   position: fixed;
   width: 100%;
   height: 100%;
+}
+
+.loader.dark {
   background: radial-gradient(
     ellipse at bottom,
     var(--light-bg),
@@ -73,7 +76,8 @@
 }
 
 #stars,
-#stars-bg {
+#stars-bg,
+#stars-menu {
   content: "e";
   background: transparent;
   box-shadow: 1744px 122px #fff, 134px 1321px #fff, 92px 859px #fff,
@@ -105,7 +109,8 @@
   animation: animStar 50s linear infinite;
 }
 #stars:after,
-#stars-bg:after {
+#stars-bg:after,
+#stars-menu::after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -145,7 +150,8 @@
     1271px 376px #fff, 43px 1654px #fff, 77px 803px #fff, 1399px 197px #fff;
 }
 
-#stars2 {
+#stars2,
+#stars-menu2 {
   width: 2px;
   height: 2px;
   background: transparent;
@@ -186,7 +192,8 @@
     814px 1013px #fff;
   animation: animStar 100s linear infinite;
 }
-#stars2:after {
+#stars2:after,
+#stars-menu2::after {
   content: " ";
   position: absolute;
   top: 2000px;
