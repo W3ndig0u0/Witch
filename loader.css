@@ -45,12 +45,12 @@
 
 @keyframes main {
   from {
-    padding-left: 5000px;
+    padding-top: 2000px;
     opacity: 0;
   }
   to {
     opacity: 1;
-    padding-left: 0px;
+    padding-top: 0px;
   }
 }
 
