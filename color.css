@@ -32,7 +32,7 @@ body.dark-theme {
 .darkmode {
   position: absolute;
   top: 6vh;
-  left: 80vw;
+  left: 50vw;
   background-color: cyan;
   transition: 0.4s;
 }
