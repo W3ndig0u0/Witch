@@ -13,7 +13,11 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background: var(--dark-bg);
+  background: radial-gradient(
+    ellipse at bottom,
+    var(--light-bg),
+    var(--dark-bg)
+  );
 }
 
 @keyframes jump {

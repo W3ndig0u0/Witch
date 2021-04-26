@@ -15,7 +15,7 @@ footer p {
   font-size: 16px;
   padding: 0;
   margin: 1vh;
-  color: var(--blue2);
+  color: var(--blue);
   text-shadow: 1px 1px var(--orang);
 }
 .mobile-footer {
