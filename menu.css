@@ -43,6 +43,11 @@
   display: none;
   position: absolute;
   z-index: 10;
+  background-image: radial-gradient(
+    ellipse at bottom,
+    var(--light-bg),
+    var(--dark-bg)
+  );
 }
 
 .menu.dark {
