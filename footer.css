@@ -22,4 +22,5 @@ footer p {
   text-align: center;
   padding: 4vw;
   border-top: 2px solid var(--orang);
+  padding-bottom: 6rem;
 }
