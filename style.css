@@ -3,6 +3,14 @@
   --blue2: rgb(1, 136, 202);
   --purp: rgb(89, 94, 171);
   --orang: rgb(142, 99, 130);
+  --bg: linear-gradient(
+    to top right,
+    rgba(89, 94, 171, 0.9),
+    rgba(1, 136, 202, 0.4),
+    rgba(255, 255, 255, 1),
+    rgba(142, 99, 130, 1)
+  );
+  --dark-bg: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 * {
@@ -33,14 +41,26 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Kabrio Abarth";
-  background-image: linear-gradient(
-      to top right,
-      rgba(89, 94, 171, 0.9),
-      rgba(1, 136, 202, 0.4),
-      rgba(255, 255, 255, 1),
-      rgba(142, 99, 130, 1)
-    ),
-    url("img/YEP.png");
+  background-image: var(--bg), url("img/YEP.png");
+}
+
+button {
+  display: inline-block;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 5px 5px 5px var(--index-light-text-color);
+  -webkit-box-shadow: 5px 5px 5px var(--index-light-text-color);
 }
 
 .grid {

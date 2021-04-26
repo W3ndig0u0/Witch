@@ -6,3 +6,12 @@
     console.log("YEP");
 })
 })
+
+
+document.querySelector("nightmode").forEach(item => {  
+  item.addEventListener('click', event => {
+    console.log("NOPE");
+})
+})
+
+
