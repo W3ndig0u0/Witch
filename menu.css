@@ -18,15 +18,15 @@
 
 .container:hover,
 .container:active {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 100%;
-  box-shadow: 5px 5px 10px #333;
+  transform: scale(1.2);
+  transition: 400ms;
+  filter: hue-rotate(90deg);
 }
 
 .mobile-menu:active {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 100%;
-  box-shadow: 5px 5px 10px #333;
+  transform: scale(1.2);
+  transition: 400ms;
+  filter: hue-rotate(90deg);
 }
 
 .bar1,
@@ -48,6 +48,10 @@
     var(--light-bg),
     var(--dark-bg)
   );
+}
+
+.menu h2 {
+  color: white;
 }
 
 .menu.active {
@@ -76,9 +80,9 @@ footer.active {
 
 #crossButton:hover,
 #crossButton:active {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px #333;
+  transform: scale(1.2);
+  transition: 400ms;
+  filter: hue-rotate(90deg);
 }
 
 @keyframes footer {

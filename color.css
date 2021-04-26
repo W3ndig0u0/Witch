@@ -29,6 +29,19 @@ body.dark-theme {
     url("img/YEP.png");
 }
 
+.darkmode {
+  position: absolute;
+  top: 6vh;
+  left: 80vw;
+  background-color: cyan;
+  transition: 0.4s;
+}
+
+.darkmode.light {
+  background-color: darkblue;
+  color: white;
+}
+
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {

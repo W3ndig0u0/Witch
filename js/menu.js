@@ -30,4 +30,5 @@ nightmode.addEventListener("click", function () {
       : "light";
   }
   localStorage.setItem("theme", theme);
+  nightmode.classList.toggle("light");
 });
