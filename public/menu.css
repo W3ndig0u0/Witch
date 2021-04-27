@@ -62,12 +62,12 @@
 footer.active {
   position: fixed;
   background-image: radial-gradient(var(--light-bg), var(--dark-bg));
-  z-index: 10000;
+  z-index: 1000;
   animation: footer 1s forwards;
 }
 
 #crossButton {
-  position: absolute;
+  position: fixed;
   top: 5vh;
   right: 6vw;
   color: var(--purp);

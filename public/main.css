@@ -15,6 +15,11 @@
   margin-left: 2vw;
   margin-right: 2vw;
   margin-bottom: 2vh;
+  transition: 300ms;
+}
+
+.title:hover {
+  filter: hue-rotate(45deg);
 }
 
 .text {

@@ -23,7 +23,7 @@ auth.onAuthStateChanged(user => {
         // signed in
         whenSignedIn.className = "not-hidden";
         whenSignedOut.className = "hidden";
-        userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3> <p>User ID: ${user.uid}</p>`;
+        userDetails.innerHTML = `<h3 class="name">Hello ${user.displayName}!</h3>`;
         userImg.innerHTML = `<img class="user-img" src="${user.photoURL}">`;
     } 
     else {

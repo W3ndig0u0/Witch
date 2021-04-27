@@ -1,13 +1,3 @@
-#whenSignedOut {
-  position: absolute;
-  left: 45%;
-}
-
-#whenSignedIn {
-  position: absolute;
-  left: 45%;
-}
-
 #whenSignedOut.hidden {
   display: none;
 }
@@ -22,4 +12,7 @@
 
 #whenSignedIn.not-hidden {
   display: block;
+}
+
+.name {
 }
