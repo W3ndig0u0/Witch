@@ -1,32 +1,36 @@
 const auth = firebase.auth();
+
 const whenSignedIn = document.getElementById('whenSignedIn');
 const whenSignedOut = document.getElementById('whenSignedOut');
-const signOutBtn = document.getElementById('signOutBtn');
 
 const signInBtnGoogle = document.getElementById('signInBtnGoogle');
+const signOutBtnFaebook = document.getElementById('signOutBtnFaebook');
+
 const userDetails = document.getElementById('userDetails');
 const userImg = document.getElementById('userImg');
 
-const googleProvider = new firebase.auth.GoogleAuthProvider();
-var user = firebase.auth().currentUser;
 
-signOutBtn.onclick = () => auth.signOut();
+const googleProvider = new firebase.auth.GoogleAuthProvider();
+
+/// Sign in event handlers
+
 signInBtnGoogle.onclick = () => auth.signInWithPopup(googleProvider);
 
+signOutBtn.onclick = () => auth.signOut();
 
 auth.onAuthStateChanged(user => {
     if (user) {
         // signed in
-        whenSignedIn.style.display = "block";
-        whenSignedOut.style.display = "none";
-        userDetails.innerHTML = `<h3 class="Name">Hello ${user.displayName}!</h3>`;
+        whenSignedIn.className = "not-hidden";
+        whenSignedOut.className = "hidden";
+        userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3> <p>User ID: ${user.uid}</p>`;
         userImg.innerHTML = `<img class="user-img" src="${user.photoURL}">`;
-    }
-    else if(!user)
-    {
+    } 
+    else {
         // not signed in
-        whenSignedOut.style.display = "block";
-        whenSignedIn.style.display = "none";
+        whenSignedIn.className = "hidden";
+        whenSignedOut.className = "not-hidden";
         userDetails.innerHTML = '';
+        userImg.innerHTML = '';
     }
 });

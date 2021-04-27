@@ -1,0 +1,25 @@
+#whenSignedOut {
+  position: absolute;
+  left: 45%;
+}
+
+#whenSignedIn {
+  position: absolute;
+  left: 45%;
+}
+
+#whenSignedOut.hidden {
+  display: none;
+}
+
+#whenSignedIn.hidden {
+  display: none;
+}
+
+#whenSignedOut.not-hidden {
+  display: block;
+}
+
+#whenSignedIn.not-hidden {
+  display: block;
+}
