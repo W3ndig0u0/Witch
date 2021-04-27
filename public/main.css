@@ -15,10 +15,12 @@
   margin-left: 2vw;
   margin-right: 2vw;
   margin-bottom: 2vh;
-  transition: 300ms;
+  transition: 600ms;
 }
 
-.title:hover {
+.title:hover,
+.title:active {
+  transform: scale(1.03);
   filter: hue-rotate(45deg);
 }
 
@@ -62,6 +64,7 @@
 .trailer2:nth-of-type(2) {
   margin-left: 70vw;
 }
+
 .frame-container2 {
   display: flex;
   justify-content: center;

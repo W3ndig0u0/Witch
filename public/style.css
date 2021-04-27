@@ -27,6 +27,14 @@ html {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   display: inline-block;
   width: 5rem;

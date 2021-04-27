@@ -31,12 +31,13 @@ body.dark-theme {
 }
 
 .darkmode {
-  background-color: cyan;
+  content: "ds";
+  background-color: var(--blue);
   transition: 0.4s;
 }
 
 .darkmode.light {
-  background-color: darkblue;
+  background-color: var(--bg-orang);
   color: white;
 }
 
