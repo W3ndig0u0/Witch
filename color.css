@@ -4,9 +4,10 @@
   --purp: rgb(89, 94, 171);
   --bg-purp: rgba(89, 94, 171, 0.8);
   --orang: rgb(142, 99, 130);
+  --bg-orang: rgb(142, 99, 130, 0.5);
   --white: rgb(255, 255, 255);
-  --light-bg: #1b2735 0%;
-  --dark-bg: #090a0f 100%;
+  --light-bg: rgba(27, 39, 53, 0.9);
+  --dark-bg: rgba(9, 10, 15, 0.9);
 }
 
 body {
@@ -15,7 +16,7 @@ body {
       var(--bg-purp),
       var(--bg-blue),
       var(--white),
-      var(--orang)
+      var(--bg-orang)
     ),
     url("img/YEP.png");
 }
@@ -51,8 +52,7 @@ body.dark-theme {
       ),
       url("img/YEP.png");
   }
-  .loader,
-  .menu {
+  .loader {
     background-image: radial-gradient(
       ellipse at bottom,
       var(--light-bg),
@@ -60,14 +60,13 @@ body.dark-theme {
     );
   }
 
-  .menu.light,
   .loader.light {
     background-image: linear-gradient(
       to top right,
       var(--bg-purp),
       var(--bg-blue),
       var(--white),
-      var(--orang)
+      var(--bg-orang)
     );
   }
   body.light-theme {
@@ -76,7 +75,7 @@ body.dark-theme {
         var(--bg-purp),
         var(--bg-blue),
         var(--white),
-        var(--orang)
+        var(--bg-orang)
       ),
       url("img/YEP.png");
   }
