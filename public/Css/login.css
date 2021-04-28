@@ -19,8 +19,9 @@
 }
 
 .dropdown-item {
+  word-wrap: break-word;
   position: absolute;
-  width: 250px;
+  width: 15vw;
   opacity: 0;
   z-index: 2;
   background: var(--orang);
@@ -33,7 +34,7 @@
   overflow-y: auto;
   overflow-x: hidden;
 
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   margin-top: 1rem;
   padding: 0.5rem;
   color: white;
@@ -81,10 +82,6 @@
   font-size: 36px;
   padding-top: 0rem;
   padding-bottom: 0.5rem;
-}
-
-.name:hover {
-  cursor: text;
   color: white;
 }
 
@@ -110,7 +107,7 @@
 
 .dropdown-item span:not(:first-child):hover {
   padding-right: 8px;
-  padding-left: 28px;
+  padding-left: 18px;
 }
 
 .dropdown-item span:not(:first-child):hover::before {
