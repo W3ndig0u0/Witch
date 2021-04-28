@@ -21,15 +21,11 @@ signOutBtn.onclick = () => auth.signOut();
 auth.onAuthStateChanged(user => {
     if (user) {
         // signed in
-
-        const html = document.createElement('div');
+        
         whenSignedIn.className = "not-hidden";
         whenSignedOut.className = "hidden";
         userImg.innerHTML = `<img class="user-img" src="${user.photoURL}">`;
-        // userDetails.innerHTML = `<h3 class="name">Hello ${user.displayName}!</h3>`;
-        
-        html.innerHTML = items.join('');
-        document.getElementById('login').appendChild(html);
+        userDetails.innerHTML = `<h3 class="name">Welcome ${user.displayName}!</h3>`;
     } 
     else {
         // not signed in
@@ -39,3 +35,13 @@ auth.onAuthStateChanged(user => {
         userImg.innerHTML = '';
     }
 });
+
+userImg.onclick = () => {
+    document.querySelector(".dropdown-item").classList.toggle("active");
+}
+
+window.onclick = function(event) {
+    if (event.target == userImg) {
+        userImg.style.opacity = "0";
+    }
+}

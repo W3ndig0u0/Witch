@@ -56,7 +56,8 @@
 }
 
 .menu .title {
-  width: 10%;
+  width: 20%;
+  min-width: 10rem;
   margin-top: 0rem;
 }
 
@@ -71,7 +72,6 @@
   animation: menu 0.8s forwards;
   display: block;
 }
-
 footer.active {
   position: fixed;
   background-image: radial-gradient(var(--light-bg), var(--dark-bg));
@@ -98,14 +98,13 @@ footer.active {
 .box a {
   font-size: 48px;
   transition: 400ms;
-  color: var(--orang);
+  color: var(--blue);
 }
 
 .box a:hover,
 .box a:active {
-  filter: hue-rotate(180deg);
+  filter: hue-rotate(90deg);
 }
-
 
 @keyframes footer {
   from {
