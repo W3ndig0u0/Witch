@@ -71,6 +71,11 @@
   height: auto;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #333;
+  cursor: pointer;
+  transition: 400ms;
+}
+.scroll .manga:hover {
+  transform: scale(1.08);
 }
 
 .scroll .trailer {

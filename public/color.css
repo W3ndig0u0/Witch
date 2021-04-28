@@ -28,6 +28,7 @@ body.dark-theme {
       var(--dark-bg)
     ),
     url("img/YEP.png");
+  transition: background 500ms;
 }
 
 .darkmode {
@@ -40,6 +41,7 @@ body.dark-theme {
   content: "🌟";
   background-color: var(--bg-purp);
   color: white;
+  transition: 500ms;
 }
 
 @media (prefers-color-scheme: dark) {
