@@ -68,11 +68,11 @@
 
 .close {
   position: absolute;
-  top: 5vh;
-  right: 10vw;
+  top: 2vh;
+  right: 5vw;
   color: var(--purp);
-  font-size: 5em;
-  transition: 0.3s;
+  font-size: 4.5em;
+  transition: 400ms;
   cursor: pointer;
   text-shadow: 1px 1px var(--blue);
 }
