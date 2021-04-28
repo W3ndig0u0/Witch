@@ -65,6 +65,7 @@
 }
 
 .user-img {
+  width: 3rem;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -115,4 +116,8 @@
 .dropdown-item span:not(:first-child):hover::before {
   opacity: 1;
   margin-left: 1rem;
+}
+
+.google-logo {
+  width: 2rem;
 }

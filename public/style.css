@@ -48,9 +48,8 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.03);
   transition: 400ms;
-  filter: hue-rotate(45deg);
   transition: 0.4s;
 }
 
