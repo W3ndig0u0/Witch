@@ -53,3 +53,22 @@ button:hover {
   filter: hue-rotate(45deg);
   transition: 0.4s;
 }
+
+.scroll {
+  overflow-y: auto;
+  height: 40vh;
+}
+
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--orang);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purp);
+  border-radius: 20px;
+}

@@ -14,10 +14,21 @@
 
 #whenSignedIn.not-hidden {
   display: block;
-  float: left;
-  clear: left;
+}
+
+.user-img {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  margin: 0%;
+  border-radius: 50px;
 }
 
 .name {
   color: white;
+}
+
+.login {
+  flex-wrap: wrap-reverse;
 }

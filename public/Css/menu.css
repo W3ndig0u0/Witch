@@ -44,11 +44,7 @@
   overflow-y: auto;
   position: absolute;
   z-index: 10;
-  background-image: radial-gradient(
-    ellipse at bottom,
-    var(--light-bg),
-    var(--dark-bg)
-  );
+  background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);
 }
 
 .menu .grid {

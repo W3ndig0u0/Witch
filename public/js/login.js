@@ -21,10 +21,15 @@ signOutBtn.onclick = () => auth.signOut();
 auth.onAuthStateChanged(user => {
     if (user) {
         // signed in
+
+        const html = document.createElement('div');
         whenSignedIn.className = "not-hidden";
         whenSignedOut.className = "hidden";
-        userDetails.innerHTML = `<h3 class="name">Hello ${user.displayName}!</h3>`;
         userImg.innerHTML = `<img class="user-img" src="${user.photoURL}">`;
+        // userDetails.innerHTML = `<h3 class="name">Hello ${user.displayName}!</h3>`;
+        
+        html.innerHTML = items.join('');
+        document.getElementById('login').appendChild(html);
     } 
     else {
         // not signed in
