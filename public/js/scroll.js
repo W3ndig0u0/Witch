@@ -1,6 +1,6 @@
 document.addEventListener( "DOMContentLoaded", function() {
   
-  var div = document.getElementById( "container" );
+  var div = document.getElementById( "grid" );
 
   div.addEventListener( "scroll", function() {
     var max_scroll = this.scrollHeight - this.clientHeight;

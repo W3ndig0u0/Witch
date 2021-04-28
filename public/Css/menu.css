@@ -47,9 +47,6 @@
   background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);
 }
 
-.menu .grid {
-}
-
 .menu .top {
   margin-top: 5vh;
   margin-left: 5vw;
