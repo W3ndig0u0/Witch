@@ -167,7 +167,7 @@
   .text {
     width: 35vh;
     margin-right: 3vw;
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
     transform: scale(0.9, 1.35);
   }
 
@@ -217,7 +217,7 @@
   .text {
     width: 40vh;
     margin-right: 3vw;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
   }
 
   .mini-img img {
