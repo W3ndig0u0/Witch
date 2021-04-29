@@ -71,6 +71,7 @@
   animation: menu 0.8s forwards;
   display: block;
 }
+
 footer.active {
   position: fixed;
   background-image: radial-gradient(var(--light-bg), var(--dark-bg));

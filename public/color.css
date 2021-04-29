@@ -28,20 +28,6 @@ body.dark-theme {
       var(--dark-bg)
     ),
     url("img/YEP.png");
-  transition: background 500ms;
-}
-
-.darkmode {
-  content: "🌙";
-  background-color: var(--blue);
-  transition: 0.4s;
-}
-
-.darkmode.light {
-  content: "🌟";
-  background-color: var(--bg-purp);
-  color: white;
-  transition: 500ms;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,6 +45,11 @@ body.dark-theme {
       var(--light-bg),
       var(--dark-bg)
     );
+  }
+  .darkmode {
+    content: "🌙";
+    background-color: var(--blue);
+    transition: 0.4s;
   }
 
   .loader.light {
@@ -79,5 +70,13 @@ body.dark-theme {
         var(--bg-orang)
       ),
       url("img/YEP.png");
+  }
+
+  .darkmode.light {
+    content: "🌟";
+    background-color: var(--bg-purp);
+    color: white;
+    transition: 500ms;
+    transition: background 500ms;
   }
 }

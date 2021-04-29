@@ -37,8 +37,8 @@ a {
 
 button {
   display: inline-block;
-  width: 5rem;
-  height: 2rem;
+  min-width: 4rem;
+  min-height: 3rem;
   border-radius: 10px;
   border: none;
   padding: 0;
