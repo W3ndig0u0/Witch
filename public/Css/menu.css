@@ -68,15 +68,8 @@
 }
 
 .menu.active {
-  animation: menu 0.8s forwards;
+  animation: menu-animation 1.2s forwards ease-out;
   display: block;
-}
-
-footer.active {
-  position: fixed;
-  background-image: radial-gradient(var(--light-bg), var(--dark-bg));
-  z-index: 1000;
-  animation: footer 1s forwards;
 }
 
 #crossButton {
@@ -106,23 +99,31 @@ footer.active {
   filter: hue-rotate(90deg);
 }
 
-@keyframes footer {
-  from {
-    width: 20vw;
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateY(200%);
   }
-  to {
-    width: 100vw;
-    height: 20vh;
+  40% {
+    transform: scale(0.1) translateY(0);
   }
-}
 
-@keyframes menu {
-  from {
-    width: 0vw;
-    height: 90vh;
+  50% {
+    transform: scale(0.05) translateY(0);
   }
-  to {
-    width: 100vw;
-    height: 90vh;
+
+  60% {
+    opacity: 1;
+    transform: scale(0.05) translateY(0);
+  }
+  80% {
+    padding-bottom: 100%;
+    border-radius: 100%;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    border-radius: 0;
   }
 }
