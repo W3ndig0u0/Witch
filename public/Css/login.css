@@ -54,14 +54,16 @@
   margin-top: 1rem;
   text-align: center;
   justify-content: center;
-  transition: 400ms;
+  transition: 500ms ease-in-out;
 }
 
 .dropdown-item span:not(:first-child):hover {
+  transition: 300ms ease-in;
   color: var(--blue);
 }
 
 .dropdown-item span:last-of-type:hover {
+  transition: 300ms ease-in;
   color: red;
 }
 
@@ -95,7 +97,7 @@
   font-size: 24px;
   opacity: 0;
   margin-left: -40px;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .dropdown-item span:last-of-type::before {
@@ -103,7 +105,7 @@
   font-size: 32px;
   opacity: 0;
   margin-left: -60px;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 
 .dropdown-item span:not(:first-child):hover {

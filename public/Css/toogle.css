@@ -2,14 +2,13 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 4vw;
+  height: 5vh;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
-  visibility: hidden;
   width: 0;
   height: 0;
 }
@@ -29,16 +28,16 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 34px;
-  width: 30px;
+  width: 2rem;
+  height: 2rem;
   left: 0px;
   bottom: 0px;
-  background-color: teal;
+  background-color: black;
   transition: 0.4s;
 }
 
 .slider::after {
-  content: "🤶🔫";
+  content: "🌟 🌙";
 }
 
 input:checked + .slider {
@@ -46,8 +45,8 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(30px);
-  background-color: yellow;
+  transform: translateX(1.4vw);
+  background-color: white;
 }
 
 /* Rounded sliders */
