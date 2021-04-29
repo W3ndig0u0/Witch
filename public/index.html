@@ -1,391 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Wandering Witch</title>
-    
-    <link rel="stylesheet" href="Css/fade.css" />
-    <link rel="stylesheet" href="Css/loader.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="color.css" />
-    <link rel="stylesheet" href="Css/footer.css" />
-    <link rel="stylesheet" href="Css/login.css" />
-    <link rel="stylesheet" href="Css/main.css" />
-    <link rel="stylesheet" href="Css/media.css" />
-    <link rel="stylesheet" href="Css/modal.css" />
-    <link rel="stylesheet" href="Css/menu.css" />
-    <link rel="stylesheet" href="Css/toogle.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script defer src="js/menu.js"></script>
-    <script defer src="js/login.js"></script>
-    <script defer src="js/modal.js"></script>
-    <script defer src="js/scroll.js"></script>
-    <script defer src="js/darkmode.js"></script>
+  <title>Wandering Witch</title>
+
+  <link rel="stylesheet" href="Css/fade.css" />
+  <link rel="stylesheet" href="Css/loader.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="color.css" />
+  <link rel="stylesheet" href="Css/footer.css" />
+  <link rel="stylesheet" href="Css/login.css" />
+  <link rel="stylesheet" href="Css/main.css" />
+  <link rel="stylesheet" href="Css/media.css" />
+  <link rel="stylesheet" href="Css/modal.css" />
+  <link rel="stylesheet" href="Css/menu.css" />
+  <link rel="stylesheet" href="Css/toogle.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+  
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/login.js"></script>
+  <script defer src="js/modal.js"></script>
+  <script defer src="js/scroll.js"></script>
+  <script defer src="js/darkmode.js"></script>
+  <script defer src="js/img.js"></script>
 
 
-<!-- !Firebase -->
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyAa1_9ozFyRQLHI5GgA7Q_QN6kM0UQooOA",
-    authDomain: "witch-jing.firebaseapp.com",
-    projectId: "witch-jing",
-    storageBucket: "witch-jing.appspot.com",
-    messagingSenderId: "302393023173",
-    appId: "1:302393023173:web:e215713454fdffae6c6eac",
-    measurementId: "G-NLL4MTV802"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+  <!-- !Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 
-    <link
-      rel="shortcut icon"
-      href="https://media.vgm.io/products/13/7731/7731-1601738358.png"
-    />
-  </head>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAa1_9ozFyRQLHI5GgA7Q_QN6kM0UQooOA",
+      authDomain: "witch-jing.firebaseapp.com",
+      projectId: "witch-jing",
+      storageBucket: "witch-jing.appspot.com",
+      messagingSenderId: "302393023173",
+      appId: "1:302393023173:web:e215713454fdffae6c6eac",
+      measurementId: "G-NLL4MTV802"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
-  <body>
-    
-    <!-- !Loading Screen -->
-    <span class="loader">
-      <img
-        class="loader-gif"
-        src="https://media.vgm.io/products/13/7731/7731-1601738358.png"
-        alt="Loading-Screen"
-      />
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </span>
+  <link rel="shortcut icon" href="https://media.vgm.io/products/13/7731/7731-1601738358.png" />
+</head>
 
-    <header>
-      <div class="menu">
-        <div class="menu-content">
-          <div class="top">
+<body>
 
-          <img
-          class="title"
-          src="https://media.vgm.io/products/13/7731/7731-1601738358.png"
-          alt="Logo"
-        />
+  <!-- !Loading Screen -->
+  <span class="loader">
+    <img class="loader-gif" src="https://media.vgm.io/products/13/7731/7731-1601738358.png" alt="Loading-Screen" />
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </span>
 
-        <label class="switch darkmode">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
+  <header>
+    <div class="menu">
+      <div class="menu-content">
+        <div class="top">
 
-        <div id="whenSignedOut">
-          <button id="signInBtnGoogle" class="btn login"><img class="google-logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="google-logo"></button>
-            </div>
+          <img class="title" src="https://media.vgm.io/products/13/7731/7731-1601738358.png" alt="Logo" />
+
+          <label class="switch darkmode">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+
+          <div id="whenSignedOut">
+            <button id="signInBtnGoogle" class="btn login"><img class="google-logo"
+                src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+                alt="google-logo"></button>
+          </div>
 
           <div id="whenSignedIn">
-              <span id="userImg"></span>
-                <div class="dropdown-item">
-                  <span id="userDetails"></span>
-                  <span >🤷‍♀️</span>
-                  <span >🤶🔫</span>
-                  <span >🐱‍🏍</span>
-                  <span id="signOutBtn" class="btn signOut">Logout</span>
+            <span id="userImg"></span>
+            <div class="dropdown-item">
+              <span id="userDetails"></span>
+              <span>🤷‍♀️</span>
+              <span>🤶🔫</span>
+              <span>🐱‍🏍</span>
+              <span id="signOutBtn" class="btn signOut">Logout</span>
             </div>
-        </div>
+          </div>
 
           <div id="crossButton">&#10006;</div>
         </div>
-          <h2>Menu</h2>
-          <!-- !!HÄR E GRID!!!! -->
-          <!-- !!HÄR E GRID!!!! -->
-          <!-- !!HÄR E GRID!!!! -->
-          <div class="grid">
-            <div class="box">
+        <h2>Menu</h2>
+        <!-- !!HÄR E GRID!!!! -->
+        <!-- !!HÄR E GRID!!!! -->
+        <!-- !!HÄR E GRID!!!! -->
+        <div class="grid">
+          <div class="box">
             <ul>
               <li><a href="#">About</a></li>
             </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
-            <div class="box">
-            <ul>
-              <li><a href="#">About</a></li>
-            </ul>
-            </div>
           </div>
-          <div id="stars-menu"></div> 
-          <div id="stars-menu2"></div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
         </div>
+        <div id="stars-menu"></div>
+        <div id="stars-menu2"></div>
       </div>
-    </header>
-      
+    </div>
+  </header>
 
-    <main class="main">
-      <div id="stars-bg"></div>
-      <div id="stars-bg2"></div>
-      <div class="grid">
 
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img">
-          <div id="caption"></div>
-        </div>
+  <main class="main">
+    <div id="stars-bg"></div>
+    <div id="stars-bg2"></div>
+    <div class="grid">
 
-        <div class="left">
-          <img
-            class="title"
-            src="https://media.vgm.io/products/13/7731/7731-1601738358.png"
-            alt="Title"
-          />
-          <div class="mobile-menu">
-            <div id="mobile-menu-btn">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-          </div>
-
-          <img
-            class="text"
-            src="https://slime300-anime.com/static/message-pc-f46b93104696af5d35561319e2f434c0.svg"
-            alt="text"
-            />
-
-              <div class="scroll">
-                <p class="trailer">Anime</p>
-          <div class="frame-container">
-            <iframe
-              width="300"
-              height="200"
-              src="https://www.youtube.com/embed/OkrbVBUa4S0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-          </div>
-          
-          <p class="trailer">Manga</p>
-          <div class="frame-container2">
-            <img
-            class="manga" id="img1"
-            src="https://i.ebayimg.com/images/g/BgsAAOSwR6ZfAAtQ/s-l1600.jpg"
-            alt="manga-img1"
-            />
-            <img
-            class="manga" id="img2"
-            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617705097l/56306016.jpg"
-            alt="Manga-img2"
-            />
-          </div>
-          
-          <p class="trailer">Light Novel</p>
-          <div class="frame-container2">
-            <img
-            class="manga" id="img3"
-            src="https://pbs.twimg.com/media/Dq9Dz60XQAA2KPq.jpg"
-            alt="manga-img1"
-              />
-              <img
-            class="manga" id="img4"
-            src="https://pbs.twimg.com/media/EUr3NDnWAAQrzrJ.jpg"
-            alt="Manga-img2"
-            />
-          </div>
-        </div>
-        
-          <footer class="big-footer">
-            <h1>Mady By WendigOuO</h1>
-            <p>More Info in About Page</p>
-          </footer>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img">
+        <div id="caption"></div>
       </div>
-        
-        <div class="mid"></div>
-        
-        <div class="mobile">
-          <p class="trailer">Anime</p>
-          <div class="frame-container2">
-            <iframe
-              width="300"
-              height="200"
-              src="https://www.youtube.com/embed/OkrbVBUa4S0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            ></iframe>
-          </div>
 
-          <p class="trailer">Manga</p>
-          <div class="frame-container2">
-            <img
-              class="manga" id="img5"
-              src="https://i.ebayimg.com/images/g/BgsAAOSwR6ZfAAtQ/s-l1600.jpg"
-              alt="manga-img1"
-            />
-            <img
-              class="manga" id="img6"
-              src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617705097l/56306016.jpg"
-              alt="Manga-img2"
-            />
-          </div>
-
-          <p class="trailer">Light Novel</p>
-          <div class="frame-container2">
-            <img
-              class="manga" id="img7"
-              src="https://pbs.twimg.com/media/Dq9Dz60XQAA2KPq.jpg"
-              alt="manga-img1"
-            />
-            <img
-              class="manga" id="img8"
-              src="https://pbs.twimg.com/media/EUr3NDnWAAQrzrJ.jpg"
-              alt="Manga-img2"
-            />
-          </div>
-
-
-          <footer class="mobile-footer">
-            <h1>Mady By WendigOuO</h1>
-            <p>More Info in About Page</p>
-          </footer>
-        </div>
-
-        <div class="right">
-          <div class="container" id="menu-btn">
+      <div class="left">
+        <img class="title" src="https://media.vgm.io/products/13/7731/7731-1601738358.png" alt="Title" />
+        <div class="mobile-menu">
+          <div id="mobile-menu-btn">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
           </div>
-          <div class="mini-img">
-            <img
-              src="https://w.wallha.com/ws/10/0CjkWJtM.jpg"
-              alt="dot-2"
-              style="--order: 1"
-            />
-          </div>
-          <div class="mini-img">
-            <img
-              src="https://i.ytimg.com/vi/dOzvpJLtV20/maxresdefault.jpg"
-              alt="dot-3"
-              style="--order: 2"
-            />
-          </div>
-          <div class="mini-img">
-            <img
-              src="https://images2.alphacoders.com/968/thumb-1920-968248.jpg"
-              alt="dot-4"
-              style="--order: 3"
-            />
-          </div>
-          <div class="mini-img">
-            <img
-              src="https://cdn.statically.io/img/yuinime.net/f=auto/wp-content/uploads/2020/06/Majo-no-Tabitabi-The-Journey-of-Elaina.jpg"
-              alt="dot-5"
-              style="--order: 4"
-            />
-          </div>
-          <div class="mini-img">
-            <img
-              src="https://images2.alphacoders.com/110/thumb-1920-1107572.png"
-              alt="dot-6"
-              style="--order: 5"
-            />
-          </div>
-          <div class="mini-img">
-            <img
-              src="https://images5.alphacoders.com/968/thumb-1920-968250.jpg"
-              alt="dot-1"
-              style="--order: 6"
-            />
+        </div>
+
+        <img class="text" src="https://slime300-anime.com/static/message-pc-f46b93104696af5d35561319e2f434c0.svg"
+          alt="text" />
+
+        <div class="scroll">
+          <p class="trailer">Anime</p>
+          <div class="frame-container">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/OkrbVBUa4S0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
 
+          <p class="trailer">Manga</p>
+          <div class="frame-container2">
+            <img class="manga" id="img1" src="https://i.ebayimg.com/images/g/BgsAAOSwR6ZfAAtQ/s-l1600.jpg"
+              alt="manga-img1" />
+            <img class="manga" id="img2"
+              src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617705097l/56306016.jpg"
+              alt="Manga-img2" />
+          </div>
+
+          <p class="trailer">Light Novel</p>
+          <div class="frame-container2">
+            <img class="manga" id="img3" src="https://pbs.twimg.com/media/Dq9Dz60XQAA2KPq.jpg" alt="manga-img1" />
+            <img class="manga" id="img4" src="https://pbs.twimg.com/media/EUr3NDnWAAQrzrJ.jpg" alt="Manga-img2" />
+          </div>
         </div>
+
+        <footer class="big-footer">
+          <h1>Mady By WendigOuO</h1>
+          <p>More Info in About Page</p>
+        </footer>
       </div>
-    </main>
-  </body>
+
+      <div class="mid"></div>
+
+      <div class="mobile">
+        <p class="trailer">Anime</p>
+        <div class="frame-container2">
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/OkrbVBUa4S0" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <p class="trailer">Manga</p>
+        <div class="frame-container2">
+          <img class="manga" id="img5" src="https://i.ebayimg.com/images/g/BgsAAOSwR6ZfAAtQ/s-l1600.jpg"
+            alt="manga-img1" />
+          <img class="manga" id="img6"
+            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617705097l/56306016.jpg"
+            alt="Manga-img2" />
+        </div>
+
+        <p class="trailer">Light Novel</p>
+        <div class="frame-container2">
+          <img class="manga" id="img7" src="https://pbs.twimg.com/media/Dq9Dz60XQAA2KPq.jpg" alt="manga-img1" />
+          <img class="manga" id="img8" src="https://pbs.twimg.com/media/EUr3NDnWAAQrzrJ.jpg" alt="Manga-img2" />
+        </div>
+
+
+        <footer class="mobile-footer">
+          <h1>Mady By WendigOuO</h1>
+          <p>More Info in About Page</p>
+        </footer>
+      </div>
+
+      <div class="right">
+        <div class="container" id="menu-btn">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="mini-img">
+          <img src="https://w.wallha.com/ws/10/0CjkWJtM.jpg" alt="dot-2" style="--order: 1" />
+        </div>
+        <div class="mini-img">
+          <img src="https://i.ytimg.com/vi/dOzvpJLtV20/maxresdefault.jpg" alt="dot-3" style="--order: 2" />
+        </div>
+        <div class="mini-img">
+          <img src="https://images2.alphacoders.com/968/thumb-1920-968248.jpg" alt="dot-4" style="--order: 3" />
+        </div>
+        <div class="mini-img">
+          <img
+            src="https://cdn.statically.io/img/yuinime.net/f=auto/wp-content/uploads/2020/06/Majo-no-Tabitabi-The-Journey-of-Elaina.jpg"
+            alt="dot-5" style="--order: 4" />
+        </div>
+        <div class="mini-img">
+          <img src="https://images2.alphacoders.com/110/thumb-1920-1107572.png" alt="dot-6" style="--order: 5" />
+        </div>
+        <div class="mini-img">
+          <img src="https://images5.alphacoders.com/968/thumb-1920-968250.jpg" alt="dot-1" style="--order: 6" />
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+  let app = new PIXI.Application({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  document.body.appendChild(app.view);
+  
+  let img = new PIXI.Sprite.from("img/snow.gif");
+  img.width = window.innerWidth;
+  img.height = window.innerHeight;
+  app.stage.addChild(img);
+  
+  depthMap = new PIXI.Sprite.from("img/imgage-s.jpg");
+  app.stage.addChild(depthMap);
+  
+  displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
+  app.stage.filters = [displacementFilter];
+  
+  window.onmousemove = function (e) {
+    displacementFilter.scale.x = (window.innerWidth / 3 - e.clientX) / 5;
+    displacementFilter.scale.y = (window.innerHeight / 1 - e.clientY) / 10;
+  };
+  </script>
+
+</body>
+
 </html>
