@@ -7,7 +7,7 @@ label {
   width: 7em;
   height: 3em;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 56px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -22,7 +22,7 @@ label {
   left: 13px;
   width: 30px;
   height: 30px;
-  background-color: #fafd0f;
+  background-color: var(--blue);
   transform: scale(1);
   border-radius: 50%;
   transition: 0.5s ease top, 0.5s ease left, 0.4s ease transform,
@@ -36,7 +36,7 @@ label {
   left: -7px;
   font-size: 54px;
   line-height: 28px;
-  color: #fafd0f;
+  color: var(--blue);
   transition: 0.4s ease color;
 }
 
@@ -63,14 +63,14 @@ label {
 }
 
 #toggle_checkbox:checked + label {
-  background-color: #000;
+  background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);
 }
 
 #toggle_checkbox:checked + label #star {
   top: 8px;
   left: 89px;
   transform: scale(0.4);
-  background-color: yellow;
+  background-color: var(--blue);
 }
 
 #toggle_checkbox:checked + label #moon {
@@ -78,5 +78,5 @@ label {
 }
 
 #toggle_checkbox:checked + label #moon:before {
-  background-color: #000;
+  background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);
 }

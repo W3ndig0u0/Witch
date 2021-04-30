@@ -15,6 +15,7 @@
   .mobile {
     display: unset !important ;
   }
+
   .mobile-menu {
     position: absolute;
     overflow: hidden;

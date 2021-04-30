@@ -16,6 +16,11 @@
   transition: 1s;
 }
 
+.menu .right {
+  padding: 0;
+  margin: 0;
+}
+
 .container:hover,
 .container:active {
   transform: scale(1.2);
@@ -54,6 +59,7 @@
 .menu {
   display: none;
   position: absolute;
+  overflow-y: auto;
   max-height: 100vh;
   z-index: 10;
   background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);
@@ -68,16 +74,14 @@
 }
 
 .menu label {
-  position: fixed;
-  top: 8.5%;
-  right: 50%;
+  margin-top: 1.5rem;
 }
 
 .menu .login {
   z-index: 10;
   position: fixed;
   top: 5%;
-  right: 30%;
+  right: 35%;
 }
 
 .menu #whenSignedIn {
@@ -105,8 +109,12 @@
   align-items: center;
 }
 
+.menu .box ul {
+  padding: 0;
+}
+
 .menu.active {
-  animation: menu-animation 1.2s forwards ease-out;
+  /* animation: menu-animation 1.2s forwards ease-out; */
   display: block;
 }
 
