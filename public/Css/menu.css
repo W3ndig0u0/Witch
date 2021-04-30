@@ -70,15 +70,21 @@
 .menu label {
   position: fixed;
   top: 8.5%;
-  right: 20%;
+  right: 50%;
 }
 
-.menu #whenSignedOut,
+.menu .login {
+  z-index: 10;
+  position: fixed;
+  top: 5%;
+  right: 30%;
+}
+
 .menu #whenSignedIn {
   z-index: 10;
   position: fixed;
   top: 5%;
-  right: 45%;
+  right: 15%;
 }
 
 #crossButton {

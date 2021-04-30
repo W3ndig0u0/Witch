@@ -19,12 +19,9 @@
 }
 
 .dropdown-item {
-  word-wrap: break-word;
-  position: absolute;
-  z-index: 100;
-  width: 15vw;
-  opacity: 1;
-  z-index: 2;
+  width: 20vw;
+  opacity: 0;
+  z-index: 0;
   background: var(--orang);
   border-top: 3px solid var(--purp);
 
@@ -35,7 +32,7 @@
   overflow-y: auto;
   overflow-x: hidden;
 
-  margin-left: 0.5rem;
+  margin-left: 10rem;
   margin-top: 1rem;
   padding: 0.5rem;
   color: white;
