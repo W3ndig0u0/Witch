@@ -36,9 +36,8 @@ a {
 }
 
 button {
-  display: inline-block;
-  min-width: 3rem;
-  min-height: 2rem;
+  width: 7em;
+  height: 3em;
   border-radius: 10px;
   border: none;
   padding: 0;
@@ -48,9 +47,22 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: scale(1.03);
   transition: 400ms;
   transition: 0.4s;
+}
+
+button::before {
+  content: "»";
+  color: var(--blue);
+  font-size: 2rem;
+  opacity: 0;
+  margin-left: -30px;
+  transition: 0.5s;
+}
+
+button:hover::before {
+  opacity: 1;
+  margin-left: 1rem;
 }
 
 .scroll {

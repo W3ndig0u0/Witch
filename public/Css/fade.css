@@ -21,6 +21,7 @@
     background-image: url("https://images5.alphacoders.com/968/thumb-1920-968250.jpg");
   }
 }
+
 @keyframes mini-img {
   to {
     opacity: 0.6;

@@ -6,3 +6,10 @@
     console.log("YEP");
 })
 })
+
+function changeImg(src) {
+  document.getElementById('slider').src = src;
+  console.log("img");
+  document.getElementById('slider').classList.toggle("change");
+
+}

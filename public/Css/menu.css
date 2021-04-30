@@ -39,32 +39,61 @@
   transition: 0.5s;
 }
 
+.menu #slider {
+  opacity: 0.65;
+  position: fixed;
+  top: 0;
+  left: 33%;
+  height: 100%;
+}
+.menu #slider.change {
+  transition: 300ms;
+}
+
 .menu {
   display: none;
-  overflow-y: auto;
   position: absolute;
+  max-height: 100vh;
   z-index: 10;
   background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);
+  margin: 0;
+  padding: 0;
 }
 
-.menu .top {
-  margin-top: 5vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+.menu-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+
+.menu label {
+  position: fixed;
+  top: 8.5%;
+  right: 30%;
+}
+
+.menu .login {
+  position: fixed;
+  top: 5%;
+  right: 50%;
+}
+
+#crossButton {
+  text-shadow: 0 0 8px black;
+  position: fixed;
+  top: 5%;
+  right: 6%;
+}
+
+.menu .box:first-of-type {
+  margin-top: -2rem;
+}
+
+.menu .box {
+  margin-top: -0.5em;
   display: flex;
-  justify-content: space-between;
-}
-
-.menu .title {
-  width: 10%;
-  margin-top: 0rem;
-}
-
-.menu h2 {
-  text-align: center;
-  margin: 2rem;
-  color: white;
-  font-size: 5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu.active {
@@ -88,6 +117,12 @@
   filter: hue-rotate(90deg);
 }
 
+.menu .title {
+  width: 70%;
+  margin: 3rem;
+  margin-top: 1rem;
+}
+
 .box a {
   font-size: 48px;
   transition: 400ms;
@@ -104,11 +139,8 @@
     opacity: 0;
     transform: scale(1) translateY(200%);
   }
-  40% {
-    transform: scale(0.1) translateY(0);
-  }
 
-  50% {
+  40% {
     transform: scale(0.05) translateY(0);
   }
 
@@ -116,6 +148,7 @@
     opacity: 1;
     transform: scale(0.05) translateY(0);
   }
+
   80% {
     padding-bottom: 100%;
     border-radius: 100%;

@@ -3,13 +3,9 @@
 }
 
 label {
-  display: block;
-  position: absolute;
-  top: 20%;
-  right: 0;
-  left: 0;
-  width: 116px;
-  height: 56px;
+  /* display: block; */
+  width: 7em;
+  height: 3em;
   margin: 0 auto;
   background-color: white;
   border-radius: 56px;
@@ -71,8 +67,8 @@ label {
 }
 
 #toggle_checkbox:checked + label #star {
-  top: 3px;
-  left: 64px;
+  top: 8px;
+  left: 89px;
   transform: scale(0.4);
   background-color: yellow;
 }

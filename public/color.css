@@ -6,8 +6,8 @@
   --orang: rgb(142, 99, 130);
   --bg-orang: rgb(142, 99, 130, 0.5);
   --white: rgb(255, 255, 255);
-  --light-bg: rgba(27, 39, 53, 0.9);
-  --dark-bg: rgba(9, 10, 15, 0.9);
+  --light-bg: rgba(27, 39, 53, 0.94);
+  --dark-bg: rgba(9, 10, 15, 0.95);
 }
 
 body {
