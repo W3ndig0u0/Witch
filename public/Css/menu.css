@@ -47,17 +47,27 @@
 .menu #slider {
   opacity: 1;
   height: 100vh;
-  width: 60vw;
+  width: 89vw;
 }
 
 .menu #slider.change {
-  transition: 300ms;
+  animation: scale 3s;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.2);
+    margin-right: 10000px;
+  }
+  to {
+    transform: scale(1);
+    margin-right: 0px;
+  }
 }
 
 .menu {
   display: none;
   position: absolute;
-  overflow-y: auto;
   max-height: 100vh;
   z-index: 10;
   background-image: radial-gradient(var(--light-bg) 10%, var(--dark-bg) 100%);

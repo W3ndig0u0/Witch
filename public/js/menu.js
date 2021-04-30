@@ -1,3 +1,8 @@
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img");
+var captionText = document.getElementById("caption");
+var close = document.getElementsByClassName("close")[0];
+
 [
   document.getElementById("crossButton"),
   document.getElementById("menu-btn"),
@@ -10,7 +15,6 @@
     document.querySelector("footer").classList.toggle("active");
   });
 });
-
 
 function changeImg(src) {
   document.getElementById("slider").src = src;
