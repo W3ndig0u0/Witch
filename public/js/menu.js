@@ -11,17 +11,8 @@
   });
 });
 
-[
-  document.getElementById("crossButton"),
-].forEach((menu) => {
-  menu.addEventListener("click", (event) => {
-    document.querySelector(".menu ").style.animation = "menu-animation 1.2s reverse both";
-    console.log("d");
-  });
-});
 
 function changeImg(src) {
   document.getElementById("slider").src = src;
-  console.log("img");
   document.getElementById("slider").classList.toggle("change");
 }

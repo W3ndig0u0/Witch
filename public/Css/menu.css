@@ -46,10 +46,8 @@
 
 .menu #slider {
   opacity: 1;
-  position: fixed;
-  top: 0;
-  left: 33%;
-  height: 100%;
+  height: 100vh;
+  width: 60vw;
 }
 
 .menu #slider.change {
@@ -114,7 +112,7 @@
 }
 
 .menu.active {
-  /* animation: menu-animation 1.2s forwards ease-out; */
+  animation: menu-animation 1.2s forwards ease-out;
   display: block;
 }
 
