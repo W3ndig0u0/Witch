@@ -20,3 +20,24 @@ function changeImg(src) {
   document.getElementById("slider").src = src;
   document.getElementById("slider").classList.toggle("change");
 }
+
+let links = document.querySelectorAll("a");
+let currentPage = "Home";
+
+links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+
+    links.forEach(link => {
+        link.removeAttribute("current");
+    });
+
+    if (currentPage = event.target.innerHTML) {
+      event.target.setAttribute("current", true);
+    }
+
+    else{
+      event.target.setAttribute("current", true);
+    }
+  });
+});
+

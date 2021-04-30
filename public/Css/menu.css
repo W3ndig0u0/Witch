@@ -54,17 +54,6 @@
   animation: scale 3s;
 }
 
-@keyframes scale {
-  from {
-    transform: scale(0.2);
-    margin-right: 10000px;
-  }
-  to {
-    transform: scale(1);
-    margin-right: 0px;
-  }
-}
-
 .menu {
   display: none;
   position: absolute;
@@ -157,6 +146,12 @@
 .box a:hover,
 .box a:active {
   filter: hue-rotate(90deg);
+  text-decoration: underline;
+}
+
+[current] {
+  filter: hue-rotate(180deg);
+  text-decoration: line-through;
 }
 
 @keyframes menu-animation {
@@ -183,5 +178,16 @@
     width: 100%;
     padding-bottom: 0;
     border-radius: 0;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.2);
+    margin-right: 10000px;
+  }
+  to {
+    transform: scale(1);
+    margin-right: 0px;
   }
 }
