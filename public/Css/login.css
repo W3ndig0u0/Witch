@@ -21,8 +21,9 @@
 .dropdown-item {
   word-wrap: break-word;
   position: absolute;
+  z-index: 100;
   width: 15vw;
-  opacity: 0;
+  opacity: 1;
   z-index: 2;
   background: var(--orang);
   border-top: 3px solid var(--purp);
@@ -45,6 +46,7 @@
 }
 
 .dropdown-item.active {
+  z-index: 100;
   opacity: 1;
 }
 
@@ -119,5 +121,5 @@
 }
 
 .google-logo {
-  width: 2rem;
+  width: 1.2rem;
 }

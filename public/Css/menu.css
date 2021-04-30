@@ -40,12 +40,13 @@
 }
 
 .menu #slider {
-  opacity: 0.65;
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 33%;
   height: 100%;
 }
+
 .menu #slider.change {
   transition: 300ms;
 }
@@ -69,13 +70,15 @@
 .menu label {
   position: fixed;
   top: 8.5%;
-  right: 30%;
+  right: 20%;
 }
 
-.menu .login {
+.menu #whenSignedOut,
+.menu #whenSignedIn {
+  z-index: 10;
   position: fixed;
   top: 5%;
-  right: 50%;
+  right: 45%;
 }
 
 #crossButton {
