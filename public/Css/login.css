@@ -19,7 +19,7 @@
 }
 
 .dropdown-item {
-  width: 20vw;
+  width: 15vw;
   opacity: 0;
   z-index: 0;
   background: var(--orang);
