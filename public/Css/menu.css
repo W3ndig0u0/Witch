@@ -71,7 +71,10 @@
 }
 
 .menu label {
-  margin-top: 1.5rem;
+  z-index: 10;
+  position: fixed;
+  top: 8.5%;
+  right: 42%;
 }
 
 .menu .login {
@@ -79,6 +82,12 @@
   position: fixed;
   top: 5%;
   right: 57%;
+}
+
+#play {
+  position: fixed;
+  top: 5%;
+  right: 30%;
 }
 
 .menu #whenSignedIn {
@@ -89,7 +98,7 @@
 }
 
 #crossButton {
-  text-shadow: 0 0 8px black;
+  text-shadow: 0 0 2px black;
   position: fixed;
   top: 5%;
   right: 6%;

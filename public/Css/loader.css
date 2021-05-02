@@ -8,6 +8,12 @@
   z-index: 1;
 }
 
+#play-loading {
+  margin: 1rem;
+  background-color: var(--purp);
+  z-index: 1000;
+  cursor: pointer;
+}
 .loader {
   animation: run 12s forwards;
   position: fixed;
