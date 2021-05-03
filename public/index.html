@@ -55,7 +55,7 @@
 
   <body>
     <!-- !Music -->
-    <audio id="music" src="img/24  仄暗く漂う残酷な気配.mp3" preload="auto" type="audio/mpeg"></audio>
+    <audio id="music" src="img/仄暗く漂う残酷な気配.mp3"></audio>
 
     <!-- !Loading Screen -->
     <span class="loader">
@@ -64,9 +64,9 @@
         src="https://media.vgm.io/products/13/7731/7731-1601738358.png"
         alt="Loading-Screen"
       />
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      <span id="stars"></span>
+      <span id="stars2"></span>
+      <span id="stars3"></span>
     </span>
 
     <header>
@@ -84,42 +84,42 @@
             <div class="box">
               <ul>
                 <li>
-                  <a href="#" preload="auto" data-current onmouseover="changeImg('img/video2.mp4')">Home</a>
+                  <a href="#" data-current onmouseover="changeImg('img/video2.mp4')">Home</a>
                 </li>
               </ul>
             </div>
             <div class="box">
               <ul>
                 <li>
-                  <a href="#" preload="auto" onmouseover="changeImg('img/video4.mp4')">Story</a>
+                  <a href="#" onmouseover="changeImg('img/video4.mp4')">Story</a>
                 </li>
               </ul>
             </div>
             <div class="box">
               <ul>
                 <li>
-                  <a href="#" preload="auto" onmouseover="changeImg('img/video5.mp4')">Character</a>
+                  <a href="#" onmouseover="changeImg('img/video5.mp4')">Character</a>
                 </li>
               </ul>
             </div>
             <div class="box">
               <ul>
                 <li>
-                  <a href="#" preload="auto" onmouseover="changeImg('img/video1.mp4')">Staff & Cast</a>
+                  <a href="#" onmouseover="changeImg('img/video1.mp4')">Staff & Cast</a>
                 </li>
               </ul>
             </div>
             <div class="box">
               <ul>
                 <li>
-                  <a href="#" preload="auto" onmouseover="changeImg('img/video3.mp4')">Music</a>
+                  <a href="#" onmouseover="changeImg('img/video3.mp4')">Music</a>
                 </li>
               </ul>
             </div>
             <div class="box">
               <ul>
                 <li>
-                  <a href="#" preload="auto" onmouseover="changeImg('img/video6.mp4')">About</a>
+                  <a href="#" onmouseover="changeImg('img/video6.mp4')">About</a>
                 </li>
               </ul>
             </div>
@@ -133,17 +133,16 @@
 
             <div class="img">
               <video loop autoplay muted id="slider">
-                <source preload="auto" src="img/video2.mp4" type="video/mp4">
-                Your browser does not support the video tag. :)
+                <source src="img/video2.mp4">
+                Your browser does not support the video tag.
               </video>
             </div>
 
             <input type="checkbox" class="darkmode" id="toggle_checkbox" />
             <label for="toggle_checkbox">
-              <div id="star">
-                <div class="star"></div>
-              </div>
-              <div id="moon"></div>
+              <span id="star"></span>
+              <span class="star"></span>
+              <span id="moon"></span>
             </label>
 
             <button id="play">Play/Mute</button>
@@ -180,7 +179,7 @@
       <div class="grid">
         <div id="myModal" class="modal">
           <span class="close">&times;</span>
-          <img class="modal-content" id="img" />
+          <img class="modal-content" id="img" src="src"  alt="modal-img"/>
           <div id="caption"></div>
         </div>
 
@@ -210,7 +209,6 @@
               <iframe
                 width="300"
                 height="200"
-                preload="auto"
                 src="https://www.youtube.com/embed/OkrbVBUa4S0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -316,7 +314,6 @@
           </div>
           <div class="mini-img">
             <img
-            preload="auto"
               src="https://w.wallha.com/ws/10/0CjkWJtM.jpg"
               alt="dot-2"
               style="--order: 1"
@@ -324,7 +321,6 @@
           </div>
           <div class="mini-img">
             <img
-            preload="auto"
               src="https://i.ytimg.com/vi/dOzvpJLtV20/maxresdefault.jpg"
               alt="dot-3"
               style="--order: 2"
@@ -332,7 +328,6 @@
           </div>
           <div class="mini-img">
             <img
-            preload="auto"
               src="https://images2.alphacoders.com/968/thumb-1920-968248.jpg"
               alt="dot-4"
               style="--order: 3"
@@ -340,7 +335,6 @@
           </div>
           <div class="mini-img">
             <img
-            preload="auto"
               src="https://cdn.statically.io/img/yuinime.net/f=auto/wp-content/uploads/2020/06/Majo-no-Tabitabi-The-Journey-of-Elaina.jpg"
               alt="dot-5"
               style="--order: 4"
@@ -348,7 +342,6 @@
           </div>
           <div class="mini-img">
             <img
-            preload="auto"
               src="https://images2.alphacoders.com/110/thumb-1920-1107572.png"
               alt="dot-6"
               style="--order: 5"
@@ -356,7 +349,6 @@
           </div>
           <div class="mini-img">
             <img
-            preload="auto"
               src="https://images5.alphacoders.com/968/thumb-1920-968250.jpg"
               alt="dot-1"
               style="--order: 6"
